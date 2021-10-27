@@ -14,10 +14,8 @@ import torch.nn.functional as F
 import torch.nn as nn
 import torch
 
-from generator import Generator as G
-from discriminator import Discriminator as D
-
-
+from model.generator import Generator as G
+from model.discriminator import Discriminator as D
 
 def main():
   os.makedirs('output', exist_ok=True)
